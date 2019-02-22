@@ -1,7 +1,7 @@
 class Form extends React.Component {
     state = {
         email: "",
-        password: ""
+        password: "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}$" //attempt at validating password, did not work
     }
     render() {
         return (
@@ -12,4 +12,5 @@ class Form extends React.Component {
             </form>
         );
     }
+    
 }
